@@ -1,0 +1,112 @@
+#homePageContainer {
+	min-height: 100vh;
+	.landingPageImage {
+		position: relative;
+		min-height: 60vh;
+		background: url("../../../Assets/Images/Backgounds/Homepage.jpg") no-repeat ;
+		background-size: cover;
+		color: black;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		h1{
+			font-size: 35px;
+			text-shadow: 5px 5px 5px aqua;
+		}
+		p{
+			margin: 10px;
+		}
+	}
+	.CardsContainer{
+		min-height: 40vh;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-wrap: wrap;
+		padding: 10px;
+		margin-top: -70px;
+		.colorsCard{
+			width: 480px;
+			height: 480px;
+			border-radius: 10px;
+			background: white;
+			margin: 20px 5px;
+			display: grid;
+			grid-template-columns: repeat(3,1fr);
+			grid-template-rows: repeat(3,1fr);
+			border: 3px solid white;
+			cursor: pointer;
+			overflow: hidden;
+			.ColorContainer{
+				display: flex;
+				justify-content: flex-end;
+				align-items:flex-end;
+				// border-radius: 10px;
+				p{
+					font-size: 0.7em;
+					padding: 2px;
+					color: white;
+					background: gray;
+				}
+			}
+		}
+	}
+	.PalleteContainer{
+		min-height: 60vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		.ColorContainer{
+			min-width: 50px;
+			min-height: 100px;
+			display: flex;
+			justify-content: end;
+			align-items: end;
+			cursor: pointer;
+			margin: 5px 0;
+			p{
+				background-color: gray;
+				color: white;
+				font-size: 0.7em;
+			}
+		}
+	}
+	.historyButton{
+		width: 100px;
+		position: fixed;
+		bottom: 5px;
+		right: 5px;
+		z-index: 100;
+	}
+	.historyContainer{
+		position: fixed;
+		// min-height: 200px;
+		min-width: 150px;
+		bottom: 50px;
+		right: 5px;
+		background-color: white;
+		padding: 5px;
+		.ColorContainer{
+			min-height: 50px;
+			margin: 5px;
+			display: flex;
+			justify-content: flex-end;
+			align-items: flex-end;
+			
+			p{
+				padding: 2px;
+				background: gray;
+				color: white;
+				font-size: 0.7em;
+			}
+			cursor: pointer;
+		}
+	}
+}
+
+.ColorContainer:hover{
+	transform: scale(1.2);
+	z-index: 10;
+}
