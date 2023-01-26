@@ -33,7 +33,7 @@ hr {
 }
 
 body {
-	background:linear-gradient(45deg,aqua,rgb(0, 255, 115));
+	background:#f0e2ec;
 	background-size: cover;
 	color: white;
 }

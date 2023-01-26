@@ -23,7 +23,7 @@ function ColorCards() {
         updateColors(temp)
     }, [])
     return (
-        <div className='CardsContainer' id='colors'>
+        <div className='CardsContainer' id='colorcards'>
             {
                 colors.map((value, index) => {
                     return (

@@ -4,7 +4,7 @@ import Colors from '../../Assets/Colors2.json'
 
 function CombinePallete() {
     return (
-        <div className='PalleteContainer'>
+        <div className='PalleteContainer' id='Pallattes'>
             {
                 Object.keys(Colors).map((value,index)=>{
                     return (
