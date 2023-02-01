@@ -10,7 +10,7 @@
 		flex-direction: column;
 		background-color: blue;
 		width: 15px;
-		height: 30vh;
+		min-height: 30vh;
 		overflow: hidden;
 		a{
 			color: white;
@@ -22,6 +22,9 @@
 		z-index: 100;
 		padding: 20px 0;
 		border-radius: 0px 5px 5px 0;
+	}
+	.openLeftNavigation{
+		width: max-content;
 	}
 	.leftNavigation:hover{
 		width: max-content;

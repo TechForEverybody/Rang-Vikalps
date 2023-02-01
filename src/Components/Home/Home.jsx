@@ -12,6 +12,7 @@ import Color from './Color';
 function Home() {
     let { colorList } = useContext(colorContext)
     let [isHistory, updateHistoryContainer] = useState(false)
+    let [leftNavigation,updateLeftNavigation]=useState(false)
     return (
         <>
             <div id="homePageContainer">
@@ -26,12 +27,12 @@ function Home() {
                         </a>
                     </Button>
                 </section>
-                <div className="leftNavigation">
-                    <a href="#colorcards">Color Cards</a>
-                    <a href="#Pallattes">Color Pallette</a>
-                    <a href="#blueshades">Blue Shades</a>
-                    <a href="#redshades">Red Shades</a>
-                    <a href="#greenshades">Green Shades</a>
+                <div className={`leftNavigation ${leftNavigation?"openLeftNavigation":""}`} onClick={()=>updateLeftNavigation(!leftNavigation)}>
+                    <a onClick={()=>updateLeftNavigation(false)} href="#colorcards">Color Cards</a>
+                    <a onClick={()=>updateLeftNavigation(false)} href="#Pallattes">Color Pallette</a>
+                    <a onClick={()=>updateLeftNavigation(false)} href="#blueshades">Blue Shades</a>
+                    <a onClick={()=>updateLeftNavigation(false)} href="#redshades">Red Shades</a>
+                    <a onClick={()=>updateLeftNavigation(false)} href="#greenshades">Green Shades</a>
                 </div>
                 <ColorCards />
                 <CombinePallete />
